@@ -1,0 +1,51 @@
+<div class="container-form-titulo">
+    <h1 class="color-fuente">Contactanos</h1>
+    <p>
+        Coordinar horario para la entrega de productos. Trabajamos con servicio de cadetería para entregas a
+        domicilio y
+        hacemos envíos a todo el país.
+    </p>
+</div>
+<div class="container-form">
+    <form id="form" class="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre" minlength="4" maxlength="12" required />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" placeholder="Apellido" minlength="4" maxlength="14" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Email" value="" required />
+        <label for="mensaje" maxlength="60">Mensaje (Opcional)</label>
+        <textarea name="mensaje" placeholder="Deje su mensaje aquí"></textarea>
+        <!--CAPTCHA-->
+        <div class="container-captcha">
+            <p id="captcha"></p>
+            <button class="btn-refesh-captcha" id="btn-recargar" type="button">
+                <img src="./images/img-recaptcha.png" alt="captcha" />
+                <p>Recargar</p>
+            </button>
+        </div>
+        <input type="text" name="captcha" id="input-rta-usuario" class="" placeholder="Ingrese aqui su codigo" />
+
+        <p id="respuesta-captcha"></p>
+        <div class="check-box">
+            <label for="">No soy un robot</label>
+            <input class="checkbox" type="checkbox" name="" id="chequer" />
+            <p id="respuesta-check"></p>
+        </div>
+        <input class="input-sumbit" type="submit" placeholder="Enviar" />
+    </form>
+    <div class="msj-form-enviado ocultar-mensaje-alerta" id="msj-form-enviado">
+        <p class="form-enviado">
+            Tu mensaje se ha enviado
+        </p>
+        <p class="form-enviado">
+            ¡Gracias por contactarnos!
+        </p>
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="btn-cerrar-alerta" id="btn-cerrar-mensaje">Aceptar</span>
+    </div>
+</div>
+
+
+
+
